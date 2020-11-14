@@ -35,7 +35,7 @@ application up and running.
 | price                  | integer    | null: false                    |
 | sales_commission       | integer    |                                |
 | sales_profit           | integer    |                                |
-| user_id                | references | null: false, foreign_key: true |
+| user                   | references | null: false, foreign_key: true |
 
 ### Association
 
