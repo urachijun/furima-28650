@@ -58,7 +58,7 @@ application up and running.
 - belongs_to :item
 - has_one :address
 
-## address テーブル
+## addresses テーブル
 
 | Columun       | Type       | Options                       |
 | ------------- | ---------- | ----------------------------- |
