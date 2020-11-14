@@ -33,8 +33,6 @@ application up and running.
 | prefecture_id          | integer    | null: false                    |
 | shipping_day_id        | integer    | null: false                    |
 | price                  | integer    | null: false                    |
-| sales_commission       | integer    |                                |
-| sales_profit           | integer    |                                |
 | user                   | references | null: false, foreign_key: true |
 
 ### Association
