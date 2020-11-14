@@ -25,7 +25,6 @@ application up and running.
 
 | Columun                | Type       | Options                        |
 | ---------------------- | ---------- | ------------------------------ |
-| image                  | text       | null: false                    |
 | item_name              | string     | null: false                    |
 | item_description       | text       | null: false                    |
 | item_category_id       | integer    | null: false                    |
