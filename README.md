@@ -38,7 +38,6 @@ application up and running.
 ### Association
 
 - belongs_to :user
-- has_many :images
 - has_one :purchase
 - belongs_to_active_hush :item_category
 - belongs_to_active_hush :item_state
