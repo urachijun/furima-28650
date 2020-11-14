@@ -25,10 +25,10 @@ application up and running.
 
 | Columun                | Type       | Options                        |
 | ---------------------- | ---------- | ------------------------------ |
-| item_name              | string     | null: false                    |
-| item_description       | text       | null: false                    |
-| item_category_id       | integer    | null: false                    |
-| item_state_id          | integer    | null: false                    |
+| name                   | string     | null: false                    |
+| description            | text       | null: false                    |
+| category_id            | integer    | null: false                    |
+| state_id               | integer    | null: false                    |
 | shipping_fee_burden_id | integer    | null: false                    |
 | prefecture_id          | integer    | null: false                    |
 | shipping_day_id        | integer    | null: false                    |
