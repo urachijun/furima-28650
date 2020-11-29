@@ -59,12 +59,6 @@ RSpec.describe User, type: :model do
   end
 
   describe '本人情報確認' do
-    context '本人情報確認がうまくいく時' do
-      it '名字・名前（振り仮名も）、生年月日が存在すれば登録できる' do
-        expect(@user).to be_valid
-      end
-    end
-
     context '新規登録がうまく行かない時' do
       it 'ユーザー本名の名字が空だと登録できない' do
         @user.last_name = ''
