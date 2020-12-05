@@ -1,7 +1,16 @@
 class ItemsController < ApplicationController
   def index
+    @items = Item.all
+  end
+  
+  def new
+    @item = Item.new
   end
 
+  def create
+    @item = items.new(item_params)
+    @item.save
+  end
 
 private
 
