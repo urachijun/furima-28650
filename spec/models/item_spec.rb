@@ -25,7 +25,7 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include "Descriptionm can't be blank"
       end
       it 'categoryが０だと登録できない' do
-        @item.category_id = '0'
+        @item.category_id = 0
         @item.valid?
         expect(@item.errors.full_messages).to include 'Category must be other than 0'
       end
@@ -35,22 +35,22 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include "Image can't be blank"
       end
       it 'Stateが０だと登録できない' do
-        @item.state_id = '0'
+        @item.state_id = 0
         @item.valid?
         expect(@item.errors.full_messages).to include 'State must be other than 0'
       end
       it 'Shipping fee burdenが０だと登録できない' do
-        @item.shipping_fee_burden_id = '0'
+        @item.shipping_fee_burden_id = 0
         @item.valid?
         expect(@item.errors.full_messages).to include 'Shipping fee burden must be other than 0'
       end
       it 'Prefecture が０だと登録できない' do
-        @item.prefecture_id = '0'
+        @item.prefecture_id = 0
         @item.valid?
         expect(@item.errors.full_messages).to include 'Prefecture must be other than 0'
       end
       it 'Shipping day が０だと登録できない' do
-        @item.shipping_day_id = '0'
+        @item.shipping_day_id = 0
         @item.valid?
         expect(@item.errors.full_messages).to include 'Shipping day must be other than 0'
       end
@@ -65,12 +65,12 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include 'Price is not a number'
       end
       it 'priceが300未満では登録できない' do
-        @item.price = '299'
+        @item.price = 299
         @item.valid?
         expect(@item.errors.full_messages).to include 'Price must be greater than 300'
       end
       it 'priceが10000000以上では登録できない' do
-        @item.price = '10000000'
+        @item.price = 10000000
         @item.valid?
         expect(@item.errors.full_messages).to include 'Price must be less than 10000000'
       end
