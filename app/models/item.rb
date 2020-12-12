@@ -11,6 +11,6 @@ class Item < ApplicationRecord
   with_options presence: true do
     validates :name, :descriptionm, :image
     validates :category_id, :state_id, :shipping_fee_burden_id, :prefecture_id, :shipping_day_id, numericality: { other_than: 0 }
-    validates :price, numericality: { only_integer: true, greater_than: 300, less_than: 10_000_000 }
+    validates :price, numericality: { only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9999999 }
   end
 end
