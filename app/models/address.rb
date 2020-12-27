@@ -1,4 +1,5 @@
 class Address < ApplicationRecord
-  belongs_to :purchases
-  belongs_to_active_hush :prefecture
+  belongs_to :purchase
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :prefecture
 end
