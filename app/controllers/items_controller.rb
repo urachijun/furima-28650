@@ -20,9 +20,7 @@ class ItemsController < ApplicationController
   end
 
   def show
-    if @item.purchase.present?
-      redirect_to action: :index
-    end
+    redirect_to action: :index if @item.purchase.present?
   end
 
   def edit
