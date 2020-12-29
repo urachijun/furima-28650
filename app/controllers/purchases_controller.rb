@@ -2,6 +2,7 @@ class PurchasesController < ApplicationController
   before_action :authenticate_user!, only: [:index, :create]
   before_action :set_item
   before_action :move_to_items_path
+  before_action :move_to_items_path2
 
   def index
     @purchase_address = PurchaseAddress.new
@@ -40,4 +41,9 @@ class PurchasesController < ApplicationController
       currency: 'jpy'
     )
   end
+
+  def move_to_items_path2
+    redirect_to items_path if @item.purchase.present?
+  end
+
 end
