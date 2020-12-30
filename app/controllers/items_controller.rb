@@ -20,7 +20,6 @@ class ItemsController < ApplicationController
   end
 
   def show
-    redirect_to action: :index if @item.purchase.present?
   end
 
   def edit
