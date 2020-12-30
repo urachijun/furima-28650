@@ -5,7 +5,7 @@ FactoryBot.define do
     city { '札幌市' }
     house_number { '1-1' }
     building_name { '東京ハイツ' }
-    phone_number { "19_012_345_678" }
+    phone_number { '19012345678' }
     token { 'tok_abcdefghijk00000000000000000' }
     user_id { 24 }
     item_id { 13 }
