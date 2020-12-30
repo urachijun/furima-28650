@@ -1,0 +1,1 @@
+Webpacker::Compiler.env["FURIMA_28650_PUBLIC_KEY"] = ENV["FURIMA_28650_PUBLIC_KEY"]

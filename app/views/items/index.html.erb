@@ -133,12 +133,12 @@
         <div class='item-img-content'>
           <%= image_tag item.image, class: "item-img" %>
 
-          <%# 商品が売れていればsold outを表示しましょう %>
           <div class='sold-out'>
-           <%# <span>Sold Out!!</span> %>
+          <% if item.purchase.present? %>
+           <span>Sold Out!!</span>
           </div>
+          <% end %>
         <% end %>
-          <%# //商品が売れていればsold outを表示しましょう %>
 
         </div>
         <div class='item-info'>
@@ -157,7 +157,6 @@
       </li>
 
       <%# 商品がない場合のダミー %>
-      <%# 商品がある場合は表示されないようにしましょう %>
 
       <li class='list'>
       <% else %>
@@ -178,7 +177,6 @@
         <% end %>
         <% end %>
       </li>
-      <%# //商品がある場合は表示されないようにしましょう %>
       <%# /商品がない場合のダミー %>
     </ul>
   </div>
